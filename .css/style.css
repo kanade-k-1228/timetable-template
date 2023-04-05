@@ -1,0 +1,66 @@
+div.timetable {
+  display: grid;
+  grid-template-columns: 30px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 30px 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+div.cell {
+  margin: 5px;
+  overflow: hidden;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+div.cell:hover {
+  background-color: #cecece;
+  transition: 300ms;
+}
+
+div.cell > h2 {
+  margin: 10px 0 10px 0;
+  padding: 0 0 0 10px;
+  max-height: 30px;
+  overflow: hidden;
+}
+div.cell > ul {
+  margin: 10px 0 10px 0;
+  padding: 0 0 0 20px;
+  list-style-type: none;
+}
+
+ul.headder {
+  margin: 10px;
+  list-style: none;
+  display: flex;
+}
+ul.headder > li {
+  margin: 4px;
+  padding: 4px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  border-radius: 4px;
+}
+ul.headder > li:hover {
+  background-color: #cecece;
+  transition: 300ms;
+}
+
+.green {
+  background-color: rgb(127, 255, 212);
+}
+
+.blue {
+  background-color: rgb(0, 238, 255);
+}
+
+.red {
+  background-color: rgb(255, 191, 144);
+}
+
+div.index {
+  text-align: center;
+  vertical-align: middle;
+}
